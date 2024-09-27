@@ -54,6 +54,7 @@ export default function Home({ posts }) {
                 {posts.links.map((link, index) => (
                     link.url ?
                     <Link
+                        preserveScroll
                         className={`p-1 mx-1 ${ link.active ? 'text-blue-500' : '' }`}
                         key={link.label}
                         href={link.url}
